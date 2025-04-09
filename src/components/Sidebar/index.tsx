@@ -111,7 +111,7 @@ const Sidebar = () => {
 				})}
 				<div className="flex absolute bottom-4 items-center md:justify-start justify-center gap-2 md:w-[90%] w-[70%] rounded-lg hover:bg-cyan-900 hover:text-white px-2 py-3 cursor-pointer bg-gray-200">
 					<LogOutOutline />
-					<span className="font-medium text-[15px] md:block hidden">Log Out</span>
+					<span className="font-medium text-[15px] md:block hidden"><a href="/login">Log Out</a></span>
 				</div>
 			</div>
 		</div>

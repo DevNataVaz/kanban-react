@@ -1,21 +1,39 @@
+// routes.ts
 import { RouteObject } from "react-router";
+import { Navigate } from "react-router-dom";
+
 import Layout from "../layout";
 import Boards from "../pages/Boards";
+import Login from "../pages/Login";
+import Cadastro from "../pages/Cadastro";
+import PrivateRoute from "../components/PrivateRoute";
 
 const routes: RouteObject[] = [
 	{
+		path: "/login",
+		element: <Login />,
+	},
+	{
+		path: "/cadastro",
+		element: <Cadastro />,
+	},
+	{
 		path: "/",
-		element: <Layout />,
+		element: (
+			<PrivateRoute>
+				<Layout />
+			</PrivateRoute>
+		),
 		children: [
 			{
-				children: [
-					{
-						path: "",
-						element: <Boards />,
-					},
-				],
+				index: true,
+				element: <Boards />,
 			},
 		],
+	},
+	{
+		path: "*",
+		element: <Navigate to="/" />,
 	},
 ];
 
