@@ -4,44 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	font-family: "Poppins", sans-serif;
-	margin: 0;
-	padding: 0;
-	min-width: 100vw;
-	min-height: 100vh;
-	height: 100%;
-	position: relative;
-	overflow-y: hidden;
-}
-
-body::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url("./assets/images/bg.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	filter: brightness(0.7);
-	z-index: -1;
-}
-
-::-webkit-scrollbar {
-	width: 8px;
-	height: 6px;
-}
-::-webkit-scrollbar * {
-	background: transparent;
-}
-::-webkit-scrollbar-thumb {
-	background: #114d4d !important;
-	border-radius: 5px;
-}
-
 
 :root {
  
@@ -81,3 +43,45 @@ main {
   width: 100%;
 
 }
+
+
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	position: relative;
+	overflow-y: hidden;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("./assets/images/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: brightness(0.7);
+	z-index: -1;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 6px;
+}
+::-webkit-scrollbar * {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: #114d4d !important;
+	border-radius: 5px;
+}
+
+
