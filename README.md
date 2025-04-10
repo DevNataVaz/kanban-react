@@ -30,6 +30,8 @@ Um projeto de Kanban simples com **autenticação de usuários** (tela de login 
    ```bash
    git clone https://github.com/devnatavaz/kanban-react.git
    cd kanban-react
+   npm install / yarn install
+   npm run dev / yarn dev
 
 
 📌 Próximos passos
