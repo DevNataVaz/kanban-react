@@ -23,7 +23,7 @@ function Login() {
   const onSubmit = ({ name, email, password }: FormData) => {
     if (email === 'natavaz02@gmail.com' && password === '123') {
       localStorage.setItem("auth", "true");
-      navigate("/");
+      navigate("/board");
     } else {
       alert("Nome, email ou senha incorretos.");
     }

@@ -10,7 +10,7 @@ import PrivateRoute from "../components/PrivateRoute";
 
 const routes: RouteObject[] = [
 	{
-		path: "/login",
+		path: "/",
 		element: <Login />,
 	},
 	{
@@ -18,7 +18,7 @@ const routes: RouteObject[] = [
 		element: <Cadastro />,
 	},
 	{
-		path: "/",
+		path: "/board",
 		element: (
 			<PrivateRoute>
 				<Layout />

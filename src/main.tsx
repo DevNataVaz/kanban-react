@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
+import Login from './pages/Login/'
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { StyleSheetManager } from "styled-components";
