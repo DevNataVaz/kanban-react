@@ -7,7 +7,7 @@ import Github from "/github.svg";
 import styles from './Login.module.css';
 
 type FormData = {
-  name: string;
+ 
   email: string;
   password: string;
 };
@@ -20,7 +20,7 @@ function Login() {
     formState: { errors }
   } = useForm<FormData>();
 
-  const onSubmit = ({ name, email, password }: FormData) => {
+  const onSubmit = ({  email, password }: FormData) => {
     if (email === 'natavaz02@gmail.com' && password === '123') {
       localStorage.setItem("auth", "true");
       navigate("/board");
